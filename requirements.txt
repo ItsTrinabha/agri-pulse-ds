@@ -1,0 +1,29 @@
+# Phase 0-3: core data handling
+pandas>=2.2
+numpy>=1.26
+
+# Phase 4: SQL layer (stdlib sqlite3 is used first; add drivers here if a real DB server is introduced later)
+
+# Phase 6: statistics
+scipy>=1.13
+
+# Phase 7: plotting
+matplotlib>=3.9
+
+# Phase 8-11: machine learning
+scikit-learn>=1.5
+joblib>=1.3
+
+# Phase 13: explainability
+shap>=0.45
+
+# Phase 16: PySpark
+# Pinned to 3.5.x (not the pip default 4.x) - Spark 4 requires Java 17+;
+# this project targets Java 8, see docs/decisions.md D16.2.
+pyspark==3.5.3
+
+# Phase 20: dashboard
+streamlit>=1.35
+
+# Phase 21: testing
+pytest>=8.0

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Data (reproducible via ingestion scripts — see docs/data_dictionary.md for sources)
+data/external/*
+data/raw/*
+data/processed/*
+data/quarantine/*
+!data/external/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/quarantine/.gitkeep
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Local database files
+*.db
+*.sqlite3
+
+# Environment / secrets
+.env
+*.env.local
+
+# Logs
+*.log
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
